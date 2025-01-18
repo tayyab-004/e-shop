@@ -1,6 +1,6 @@
 # E Shop
 
-Welcome to the E Shop project! This repository contains a full-fledged e-commerce application built using the MERN stack (MongoDB, Express.js, React.js, and Node.js).
+Welcome to the E Shop project! This repository contains a full-fledged e-commerce application built using the MERN stack with admin pannel.
 
 ## Features
 
@@ -29,19 +29,27 @@ To run this project locally, follow these steps:
 3. **Install dependencies**:
 
    ```
-   npm install
+   npm i
    ```
 
 4. **Install dependencies for both client and server**:
 
+   Open server directory
    ```
-   # Install server dependencies
    cd server
-   npm install
+   ```
+   Install server dependencies
+   ```
+   npm i
+   ```
 
-   # Install client dependencies
-   cd ../client
-   npm install
+   Open client directory
+   ```
+   cd client
+   ```
+   Install client dependencies
+   ```
+   npm i
    ```
 
 5. **Set up environment variables**:
@@ -61,9 +69,13 @@ To run this project locally, follow these steps:
    ```
 
 6. **Start the development**:
-
+   
+   Open main folder of e-shop
    ```
    cd e-shop
+   ```
+   Start the development
+   ```
    npm start
    ```
 
