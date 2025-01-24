@@ -96,6 +96,8 @@ cd client
 npm install
 ```
 
+## Environment Variables
+
 ### 4. Set Up Environment Variables:
 
 Create a `.env` file in the `server` directory with the following variables:
