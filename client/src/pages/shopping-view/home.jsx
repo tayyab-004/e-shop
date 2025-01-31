@@ -63,7 +63,6 @@ function ShoppingHome() {
   const navigate = useNavigate();
   const { toast } = useToast();
 
-
   function handleNavigateToListingPage(getCurrentItem, section) {
     sessionStorage.removeItem("filters");
     const currentFilter = {
@@ -139,7 +138,9 @@ function ShoppingHome() {
           size="icon"
           onClick={() =>
             setCurrentSlide(
-              (prevSlide) => (prevSlide - 1 + featureImageList.length) % featureImageList.length
+              (prevSlide) =>
+                (prevSlide - 1 + featureImageList.length) %
+                featureImageList.length
             )
           }
           className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/80"
@@ -150,7 +151,9 @@ function ShoppingHome() {
           variant="outline"
           size="icon"
           onClick={() =>
-            setCurrentSlide((prevSlide) => (prevSlide + 1) % featureImageList.length)
+            setCurrentSlide(
+              (prevSlide) => (prevSlide + 1) % featureImageList.length
+            )
           }
           className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/80"
         >

@@ -17,7 +17,10 @@ function ProductFilter({ filters, handleFilter }) {
               <h3 className="text-base font-bold">{keyItem}</h3>
               <div className="grid gap-2 mt-2">
                 {filterOptions[keyItem].map((option) => (
-                  <Label className="flex items-center gap-2 font-medium" key={option.id}>
+                  <Label
+                    className="flex items-center gap-2 font-medium"
+                    key={option.id}
+                  >
                     <Checkbox
                       checked={
                         filters &&

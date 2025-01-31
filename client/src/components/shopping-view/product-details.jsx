@@ -141,7 +141,9 @@ function ProductDetailsDialog({ open, setOpen, productDetails }) {
             <div className="flex items-center gap-0.5">
               <StarRatingComponent rating={averageReview} />
             </div>
-            <span className="text-muted-foreground">({averageReview.toFixed(1)})</span>
+            <span className="text-muted-foreground">
+              ({averageReview.toFixed(1)})
+            </span>
           </div>
           <div className="mt-5 mb-5">
             {productDetails?.totalStock === 0 ? (
