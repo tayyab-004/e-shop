@@ -15,6 +15,7 @@ function ProductImageUpload({
   isEditMode,
   isCustomStyling = false,
 }) {
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
   const inputRef = useRef(null);
 
   function handleImageFileChange(event) {
@@ -41,7 +42,7 @@ function ProductImageUpload({
     const data = new FormData();
     data.append("my_file", imageFile);
     const response = await axios.post(
-      "http://localhost:5000/api/admin/products/upload-image",
+      backendUrl + "/api/admin/products/upload-image",
       data
     );
     if (response?.data?.success) {
